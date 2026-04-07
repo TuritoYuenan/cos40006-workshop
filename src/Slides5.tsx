@@ -7,7 +7,7 @@ export const Slide5 = () => (
 		</Slide>
 
 		<Slide>
-			<h2></h2>
+			<h2>One suite for (almost) all F&B needs</h2>
 		</Slide>
 	</Stack>
 );

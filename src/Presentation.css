@@ -12,8 +12,18 @@
 	text-align: left;
 }
 
-.reveal :where(h1, h2, h3, h4, p, li) {
+.reveal :where(h1, h2, h3, h4, p) {
 	line-height: 1.2;
+}
+
+.reveal :where(li, dl *) {
+	line-height: 1.5;
+}
+
+.reveal dt {
+	margin-top: 1.5rem;
+	font-weight: bold;
+	text-decoration: underline var(--theme) 4px;
 }
 
 .reveal :where(h1, h2, h3, h4) {
@@ -38,21 +48,27 @@
 	font-size: 36px;
 }
 
-.reveal :where(p, li) {
+.reveal :where(p, li, dl) {
 	font-size: 36px;
 }
 
-.reveal :where(p, li).small {
+.reveal :where(p, li, dl).small {
 	font-size: 30px;
 }
 
-.reveal :where(p, li).smaller {
+.reveal :where(p, li, dl).smaller {
 	font-size: 24px;
 }
 
 .reveal .controls .controls-arrow::before,
 .reveal .controls .controls-arrow::after {
 	background-color: var(--theme);
+}
+
+.reveal .slide-number {
+	background-color: var(--theme);
+	color: var(--fg);
+	font-size: 14px;
 }
 
 .reveal .logo {
