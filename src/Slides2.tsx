@@ -5,7 +5,7 @@ import archSystem from './assets/arch_system.png';
 
 export const Slide2 = () => (
 	<Stack>
-		<Slide backgroundColor='var(--theme)'>
+		<Slide>
 			<h1>System Design and Architecture</h1>
 		</Slide>
 

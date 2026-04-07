@@ -2,7 +2,7 @@
 	--theme: #0358AD;
 	--fg: #fff;
 
-	color: var(--theme);
+	color: #012;
 
 	font-size: 24px;
 	font-family: 'Lexend', sans-serif;
@@ -12,16 +12,14 @@
 	text-align: left;
 }
 
-.reveal section[data-background-color='var(--theme)'] {
-	color: var(--fg);
-}
-
 .reveal :where(h1, h2, h3, h4, p, li) {
 	line-height: 1.2;
 }
 
-.reveal :where(h1, h2, h3) {
+.reveal :where(h1, h2, h3, h4) {
 	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 600;
+	text-decoration: underline var(--theme) 6px;
 }
 
 .reveal h1 {
@@ -50,6 +48,11 @@
 
 .reveal :where(p, li).smaller {
 	font-size: 24px;
+}
+
+.reveal .controls .controls-arrow::before,
+.reveal .controls .controls-arrow::after {
+	background-color: var(--theme);
 }
 
 .reveal .logo {

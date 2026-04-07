@@ -2,7 +2,7 @@ import { Stack, Slide } from '@revealjs/react';
 
 export const Slide1 = () => (
 	<Stack>
-		<Slide backgroundColor='var(--theme)'>
+		<Slide>
 			<h1>Problem Formulation</h1>
 		</Slide>
 

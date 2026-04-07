@@ -11,7 +11,7 @@ import { Slide5 } from './Slides5';
 import logo from './assets/logo.svg';
 
 const Presentation = () => (
-	<Deck config={{ width: 1920, height: 1080, }}>
+	<Deck config={{ width: 1920, height: 1080, loop: true }}>
 		<SlideOpening />
 		<Slide1 />
 		<Slide2 />
@@ -22,13 +22,17 @@ const Presentation = () => (
 )
 
 const SlideOpening = () => (
-	<Slide backgroundColor='var(--theme)'>
+	<Slide
+		backgroundImage={`${import.meta.env.BASE_URL}/icon.svg`}
+		backgroundPosition='right'
+		backgroundOpacity={0.3}
+		backgroundSize='contain'
+	>
 		<img src={logo} alt='Logo' className='logo' />
 		<div>
 			<h1>Point-of-Sale System and<br />Management Suite for F&B SMEs</h1>
-			<p>Class COS40006.1 / Containerised</p>
 			<p>Presented by: Nguyen Quoc Bao, Nguyen Phu Quang, Nguyen Ta Minh Triet</p>
-			<p className='small'>11 April 2026</p>
+			<p>COS40006.1 &bull; G5 Containerised &bull; 11 April 2026</p>
 		</div>
 	</Slide>
 );
