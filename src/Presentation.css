@@ -1,0 +1,76 @@
+.reveal {
+	--theme: #0358AD;
+	--fg: #fff;
+
+	color: var(--theme);
+
+	font-size: 24px;
+	font-family: 'Lexend', sans-serif;
+}
+
+.reveal * {
+	text-align: left;
+}
+
+.reveal section[data-background-color='var(--theme)'] {
+	color: var(--fg);
+}
+
+.reveal :where(h1, h2, h3, h4, p, li) {
+	line-height: 1.2;
+}
+
+.reveal :where(h1, h2, h3) {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.reveal h1 {
+	font-size: 96px;
+}
+
+.reveal h2 {
+	font-size: 60px;
+}
+
+.reveal h3 {
+	font-size: 48px;
+}
+
+.reveal h4 {
+	font-size: 36px;
+}
+
+.reveal :where(p, li) {
+	font-size: 36px;
+}
+
+.reveal :where(p, li).small {
+	font-size: 30px;
+}
+
+.reveal :where(p, li).smaller {
+	font-size: 24px;
+}
+
+.reveal .logo {
+	margin-left: -1.5rem;
+}
+
+.reveal .figure {
+	max-width: 100%;
+	max-height: 90vh;
+
+}
+
+.reveal .grid {
+	display: grid;
+	gap: 3rem;
+}
+
+.reveal .left {
+	float: left;
+}
+
+.reveal .right {
+	float: right;
+}
