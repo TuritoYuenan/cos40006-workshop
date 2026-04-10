@@ -34,10 +34,11 @@ export const Slide4 = () => (
 		<Slide>
 			<h2>Future Work</h2>
 			<ul>
-				<li>Conduct usability testing with real users</li>
-				<li>Perform load and stress testing</li>
-				<li>Collect performance metrics (latency, response time)</li>
-				<li>Improve system based on feedback</li>
+				<li>Expand platform support to iOS and macOS</li>
+				<li>Integrate AI-powered financial advisory features</li>
+				<li>Enable IoT integration with card readers and receipt printers</li>
+				<li>Migrate towards a microservices-based architecture</li>
+				<li>Enhance multi-tenant support for broader business adoption</li>
 			</ul>
 		</Slide>
 	</Stack>
