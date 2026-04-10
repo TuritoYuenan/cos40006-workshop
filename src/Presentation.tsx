@@ -11,6 +11,7 @@ import { Slide5 } from './Slides5';
 
 import logo from './assets/logo.svg';
 import swinLogo from './assets/logo_swin.svg';
+import { AExternal } from './AExternal';
 
 const Presentation = () => (
 	<Deck config={{ width: 1920, height: 1080, loop: true, slideNumber: 'c/t', controlsLayout: 'edges' }} plugins={[RevealZoom]}>
@@ -20,6 +21,7 @@ const Presentation = () => (
 		<Slide3 />
 		<Slide4 />
 		<Slide5 />
+		<SlideEnding />
 	</Deck>
 )
 
@@ -64,5 +66,45 @@ const SlideOpening = () => (
 		</Slide>
 	</Stack>
 );
+
+const SlideEnding = () => (
+	<Stack>
+		<Slide>
+			<h2>Additional Resources</h2>
+			<dl>
+				<dt>Source Code Repository</dt>
+				<dd>
+					<AExternal href="https://github.com/TuritoYuenan/cos40005-containerised-pos">
+						https://github.com/TuritoYuenan/cos40005-containerised-pos
+					</AExternal>
+				</dd>
+
+				<dt>Staff App Releases</dt>
+				<dd>
+					<AExternal href="https://github.com/TuritoYuenan/cos40005-containerised-pos/releases">
+						https://github.com/TuritoYuenan/cos40005-containerised-pos/releases
+					</AExternal>
+				</dd>
+
+				<dt>Customer App Demo</dt>
+				<dd>
+					<AExternal href="https://turitoyuenan.github.io/cos40005-containerised-pos/#order?branchID=BRA26032801&tableID=TAB26032801">
+						https://turitoyuenan.github.io/cos40005-containerised-pos/#order?branchID=BRA26032801&tableID=TAB26032801
+					</AExternal>
+				</dd>
+			</dl>
+		</Slide>
+
+		<Slide
+			backgroundImage={`${import.meta.env.BASE_URL}/icon.svg`}
+			backgroundPosition='right'
+			backgroundOpacity={0.3}
+			backgroundSize='contain'
+		>
+			<h1>Thank You!</h1>
+			<p>Feel free to ask questions and join the discussion</p>
+		</Slide>
+	</Stack>
+)
 
 export default Presentation

@@ -2,6 +2,7 @@ import { Stack, Slide } from '@revealjs/react';
 
 import fSupabaseTables from "./assets/f_supabase_tables.png";
 import fSupabaseFuncs from "./assets/f_supabase_funcs.png";
+import fssCustomerPayment from "./assets/f_ss_customer_payment.png";
 import fssCustomerCheckout from "./assets/f_ss_customer_checkout.png";
 import fssCustomerOrder from "./assets/f_ss_customer_order.png";
 import fssKitchenDisplay from "./assets/f_ss_kitchen_display.jpg";
@@ -42,10 +43,10 @@ export const Slide3 = () => (
 		</Slide>
 
 		<Slide>
-			<h2>Ordering & Checkout</h2>
+			<h2>Customer Ordering, Checkout, and Payment</h2>
 
-			<div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
-				<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+			<div className="grid" style={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
+				<div>
 					<img src={fssCustomerOrder} className="figure" />
 					<ul>
 						<li>Browse menu and select items</li>
@@ -53,11 +54,19 @@ export const Slide3 = () => (
 					</ul>
 				</div>
 
-				<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+				<div>
 					<img src={fssCustomerCheckout} className="figure" />
 					<ul>
 						<li>Checkout and payment flow</li>
 						<li>Clean and simple UI</li>
+					</ul>
+				</div>
+
+				<div>
+					<img src={fssCustomerPayment} className="figure" />
+					<ul>
+						<li>Self-checkout via VietQR</li>
+						<li>Optional pay at counter choice</li>
 					</ul>
 				</div>
 			</div>
@@ -66,8 +75,8 @@ export const Slide3 = () => (
 		<Slide>
 			<h2>Order Processing</h2>
 
-			<div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
-				<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+			<div className="grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
 					<img src={fssOderConfirm} className="figure" />
 					<ul style={{ margin: 0, paddingLeft: '18px' }}>
 						<li>Order confirmation feedback</li>
@@ -75,7 +84,7 @@ export const Slide3 = () => (
 					</ul>
 				</div>
 
-				<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
 					<img src={fssKitchenDisplay} className="figure" />
 					<ul style={{ margin: 0, paddingLeft: '18px' }}>
 						<li>Kitchen receives orders instantly</li>
@@ -88,8 +97,8 @@ export const Slide3 = () => (
 		<Slide>
 			<h2>Management Features</h2>
 
-			<div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
-				<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+			<div className="grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
 					<img src={fssMenuEditor} className="figure" />
 					<ul style={{ margin: 0, paddingLeft: '18px' }}>
 						<li>Edit, Create, and Delete menu items, tags, and promotions</li>
@@ -97,7 +106,7 @@ export const Slide3 = () => (
 					</ul>
 				</div>
 
-				<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
 					<img src={fssProfile} className="figure" />
 					<ul style={{ margin: 0, paddingLeft: '18px' }}>
 						<li>Employees can view their personal information</li>
