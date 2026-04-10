@@ -2,6 +2,7 @@ import { Stack, Slide } from "@revealjs/react";
 
 import archDevOps from './assets/arch_devops.png';
 import archSystem from './assets/arch_system.png';
+import figmaUI from './assets/f_figma_ui.png';
 
 export const Slide2 = () => (
 	<Stack>
@@ -39,6 +40,14 @@ export const Slide2 = () => (
 
 		<Slide>
 			<h2>User Interface Design</h2>
+
+			<div className="grid" style={{ gridTemplateColumns: '2fr 1fr', alignItems: 'center' }}>
+				<img src={figmaUI} alt='Figma UI Design' className='figure' />
+				<ul>
+					<li>Follows Material Design 3 design.</li>
+					<li>Supports light/dark mode and accessibility features.</li>
+				</ul>
+			</div>
 		</Slide>
 	</Stack>
 );

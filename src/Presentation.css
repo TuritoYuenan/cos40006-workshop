@@ -12,11 +12,11 @@
 	text-align: left;
 }
 
-.reveal :where(h1, h2, h3, h4, p) {
+.reveal :where(h1, h2, h3, h4) {
 	line-height: 1.2;
 }
 
-.reveal :where(li, dl *) {
+.reveal :where(p, li, dl *) {
 	line-height: 1.5;
 }
 
@@ -68,7 +68,17 @@
 .reveal .slide-number {
 	background-color: var(--theme);
 	color: var(--fg);
-	font-size: 14px;
+	font-size: 16px;
+	border-radius: 0.3rem;
+}
+
+.reveal .slide-number a {
+	font-family: 'Lexend', sans-serif;
+	text-decoration: none;
+}
+
+.reveal .progress span {
+	color: var(--theme);
 }
 
 .reveal .logo {
